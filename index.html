@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARINO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <header class="cabecera-principal">
+        <video src="vid/buceo.mp4" autoplay muted loop></video>
+    </header>
+
+    <nav id="inicio">
+        <div>
+            <div class="logos">
+                <i class="fa-solid fa-bars" onclick="openNav()"></i>
+                <a href="index.html"><img src="img/logo.ico" alt="logo"></a>
+                <i class="fa-solid fa-bag-shopping">
+                    <span>0</span>
+                    <span class="tooltip">Tu cesta!</span>
+                </i>
+            </div>
+
+            <div id="myMenu" class="enlaces">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#inicio" style="text-decoration: underline;">Home</a>
+                <a href="natacion.html">Natación</a>
+                <a href="buceo.html">Buceo</a>
+                <a href="triatlon.html">Triatlon</a>
+                <a href="pesca-submarina.html">Pesca submarina</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="sobre-nosotros.html">Sobre nosotros</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contenedor-index">
+        <h1>Tu tienda de deporte</h1>
+
+        <div class="index-hijo">
+            <section class="imagen">
+                <img src="img/natacion.png" alt="natacion" style="transform: rotateY(180deg);">
+                <div class="capa">
+                    <a href="natacion.html">
+                        <div class="texto">Natación</div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="imagen">
+                <img src="img/buceo.jpg" alt="buceo">
+                <div class="capa">
+                    <a href="buceo.html">
+                        <div class="texto">Buceo</div>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <div class="index-hijo">
+            <section class="imagen">
+                <img src="img/triatlon.jpg" alt="triatlon">
+                <div class="capa">
+                    <a href="triatlon.html">
+                        <div class="texto">Triatlon</div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="imagen">
+                <img src="img/pesca-submarina.jpg" alt="pesca submarina">
+                <div class="capa">
+                    <a href="pesca-submarina.html">
+                        <div class="texto">Pesca Submarina</div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="enLinea">
+            <a href="https://es-es.facebook.com/pages/category/Sports-Team/Deportes-Marino-221580538228/"
+                target="_blank">
+                <span>
+                    <i class="fab fa-facebook"></i>
+                </span>
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank">
+                <span>
+                    <i class="fab fa-instagram"></i>
+                </span>
+            </a>
+
+            <a href="https://www.twitter.com" target="_blank">
+                <span>
+                    <i class="fab fa-twitter"></i>
+                </span>
+            </a>
+        </div>
+
+        <p>Copyright: Oscar Monforte Prades - 2022</p>
+        <p>Para ver la página web original pulsa <a href="http://deportesmarino.com/" target="_blank"
+                style="color: #ffffff; text-decoration: underline;">aquí</a></p>
+    </footer>
+</body>
+
+<script>
+    function openNav() {
+        document.getElementById("myMenu").style.width = "25%";
+    }
+
+    function closeNav() {
+        document.getElementById("myMenu").style.width = "0";
+    }
+</script>
+
+</html>
